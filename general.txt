@@ -2,5 +2,3 @@ I put in my .vscode folder from my projects so we can use the same compiler sett
 
 ^Actually i dont think this will work for you because its all set to my file directories
 I can compile stuff this way and it'll appear in our folder so that'll help + we can use it as a template to install it to our folder in the future
-
-test
