@@ -1,0 +1,26 @@
+{ 
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [ // These are for IntelliSense
+        "${workspaceFolder}/**",
+        "E:/Coding/compiliers/mingw64/include",
+        "E:/Coding/compiliers/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include",
+        "E:/Coding/libraries/VulkanSDK-1.4.328.1/Include",
+        "E:/Coding/libraries/GLFW-3.4/include",
+        "E:/Coding/libraries/miniaudio-0.11.23",
+        "E:/Coding/libraries/GLAD-4.6_core/include"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE"
+      ],
+      "windowsSdkVersion": "10.0.19041.0",
+      "compilerPath": "E:/Coding/compiliers/mingw64/bin/g++.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "gcc-x64"
+    }
+  ],
+  "version": 4
+}

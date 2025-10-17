@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe",
+
+        // Vulkan
+        "-I", "E:/Coding/libraries/VulkanSDK-1.4.328.1/Include",
+        "-L", "E:/Coding/libraries/VulkanSDK-1.4.328.1/Lib",
+        "-lvulkan-1",
+
+        // GLFW
+        "-I", "E:/Coding/libraries/GLFW-3.4/include",
+        "-L", "E:/Coding/libraries/GLFW-3.4/lib-mingw-w64",
+        "-lglfw3",
+        "-lgdi32",    // Required by GLFW on Windows
+        "-lopengl32",
+
+        // miniaudio
+        "-I", "E:/Coding/libraries/miniaudio-0.11.23",
+
+        // GLAD
+        "-I", "E:/Coding/libraries/GLAD-4.6_core/include",
+        "E:/Coding/libraries/GLAD-4.6_core/src/glad.c"
+
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
